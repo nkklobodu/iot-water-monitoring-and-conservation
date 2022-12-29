@@ -1,5 +1,5 @@
 # IoT Water Monitoring and Conservation
-  This Arduino code is designed to monitor the water level, consumption, and turbidity of a tank or reservoir. It uses a variety of sensors and hardware components to collect this data and store it in a local SD card for later analysis.
+  This Arduino code monitors the water level, consumption, and turbidity of a tank or reservoir. It uses a variety of sensors and hardware components to collect this data and store it in a local SD card for later analysis.
   The program runs on an ESP32 microcontroller with WiFi capabilities.
 
 
