@@ -31,7 +31,48 @@
 
 
 ## Setup
+  1. Connect the HC-SR04 ultrasonic sensor to the ESP32 board using the following pin mapping:
+     * VCC to +5V
+     * GND to GND
+     * TRIG to GPIO 25
+     * ECHO to GPIO 26
+  2. Connect the YF-S201 flow sensor to the ESP32 board using the following pin mapping:
+     * VCC to +5V
+     * GND to GND
+     * OUT to GPIO 32
+  3. Connect the turbidity sensor to the ESP32 board using the following pin mapping:
+     * VCC to +3.3V
+     * GND to GND
+     * SDA to GPIO 21
+     * SCL to GPIO 22
+  4. Connect the SD card module to the ESP32 board using the following pin mapping:
+     * VCC to +3.3V
+     * GND to GND
+     * MOSI to GPIO 23
+     * MISO to GPIO 19
+     * SCK to GPIO 18
+     * CS to GPIO 5
+  5. Connect the relay module to the ESP32 board using the following pin mapping:
+     * VCC to +5V
+     * GND to GND
+     * S or In to GPIO 33
+
+     The barebones relay can also be created using this diagram:
+     
 
 
-## Additi
+RELAY
+  5. Upload the code to the Arduino board by clicking the "Upload" button in the Arduino IDE.
+
+
+  1. Install the Arduino IDE software from the [Arduino website](https://www.arduino.cc/en/software/).
   
+
+
+## Additional Information
+  * The code creates a WiFi access point called "Water" with password "12345678". Connect to this access point to access the web server and download the data stored on the SD card. This can be changed by replacing your SSID and PASSWORD in `WiFi.softAP("SSID", "PASSWORD");` in the `void setup ()` function.
+  * The code uses the `ESP32WebServer` library to create a simple web server for displaying the contents of the SD card. Use a web browser to navigate to the server by entering `http://mcserver.local` into the address bar.
+  * The code uses the `RTClib` library to handle real-time clock functionality and add timestamps to the data. Make sure to set the correct time on the RTC module before running the code. An extra Arduino code has been supplied together with instructions on how to set RTC module time.
+  * The code logs data to the SD card at a predetermined interval of 10 seconds. The data is stored in two separate files, one for turbidity data and one for flow data.
+  * The code is currently set up to use the DOIT ESP32 DevKit V1 board, but it should work with other compatible boards as well. Some minor modifications may be necessary for different hardware configurations.
+
