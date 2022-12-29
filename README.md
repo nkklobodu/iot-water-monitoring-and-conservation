@@ -1,15 +1,22 @@
 # ESP32 Water Monitoring and Conservation System
-  This Arduino code is designed to monitor the water level, flow rate, and turbidity of a tank or reservoir. It uses a variety of sensors and hardware components to collect this data and store it in a local SD card for later analysis.
+  This Arduino code is designed to monitor the water level, consumption, and turbidity of a tank or reservoir. It uses a variety of sensors and hardware components to collect this data and store it in a local SD card for later analysis.
+  The program runs on an ESP32 microcontroller with WiFi capabilities.
+  
+## Features
+  * Monitors water level using an ultrasonic distance sensor and turns the pump on or off as needed to maintain the water level within a certain range
+  * Logs data to an SD card, including date and time stamps, turbidity, and total water flow
+  * Provides a web interface for viewing the data log and downloading data files
 
 
 ## Hardware
-  * DOIT ESP32 DevKit V1 board
+  * DOIT ESP32 DevKit V1 board for controlling operations
   * HC-SR04 ultrasonic sensor for measuring water level
   * YF-S201C flow sensor for measuring flow rate
   * Turbidity sensor module for measuring water turbidity
-  * SD card module for storing data
-  * Relay module or some components to function as a relay (more on it later)
-  * DC water pump
+  * SD card module and SD card for storing data
+  * RTC module for timestamping recorded data
+  * DC water pump for pumping water
+  * Relay module for switching the water pump
 
 
 ## Code Structure
@@ -57,7 +64,9 @@
      * GND to GND
      * S or In to GPIO 33
 
-     The barebones relay can also be created using this diagram:
+     The barebones relay with a transistor and a diode can also be created using this diagram:
+     
+     <img src="images/relay.png" alt = "relay" width="426" height="198">
      
 
 
@@ -71,8 +80,16 @@ RELAY
 
 ## Additional Information
   * The code creates a WiFi access point called "Water" with password "12345678". Connect to this access point to access the web server and download the data stored on the SD card. This can be changed by replacing your SSID and PASSWORD in `WiFi.softAP("SSID", "PASSWORD");` in the `void setup ()` function.
-  * The code uses the `ESP32WebServer` library to create a simple web server for displaying the contents of the SD card. Use a web browser to navigate to the server by entering `http://mcserver.local` into the address bar.
-  * The code uses the `RTClib` library to handle real-time clock functionality and add timestamps to the data. Make sure to set the correct time on the RTC module before running the code. An extra Arduino code has been supplied together with instructions on how to set RTC module time.
+  * The code uses the `ESP32WebServer` library to create a simple web server for displaying the contents of the SD card. Use a web browser to navigate to [http://mcserver.local](http://mcserver.local/) to access the web interface.
   * The code logs data to the SD card at a predetermined interval of 10 seconds. The data is stored in two separate files, one for turbidity data and one for flow data.
+  * The data log files are named "/DATA/QUALITY.CSV" and "/DATA/USAGE.CSV" for the turbidity and consumption data, respectively.
+  * The downloaded data is in CSV format which can be analyzed in a spreadsheet application like Microsoft Excel.
   * The code is currently set up to use the DOIT ESP32 DevKit V1 board, but it should work with other compatible boards as well. Some minor modifications may be necessary for different hardware configurations.
+  
+## Future Plans and Road Map
+  - [ ] Add support for additional sensors
+  - [ ] Implement automatic notifications
+  - [ ] Integrate the system with a cloud platform
+  - [ ] Optimize the code
+  - [ ] Add a user interface
 
