@@ -1,7 +1,8 @@
-# IoT Water Monitoring and Conservation System
+# IoT Water Monitoring and Conservation
   This Arduino code is designed to monitor the water level, consumption, and turbidity of a tank or reservoir. It uses a variety of sensors and hardware components to collect this data and store it in a local SD card for later analysis.
   The program runs on an ESP32 microcontroller with WiFi capabilities.
-  
+
+
 ## Features
   * Monitors water level using an ultrasonic distance sensor and turns the pump on or off as needed to maintain the water level within a certain range
   * Logs data to an SD card, including date and time stamps, turbidity, and total water flow
@@ -70,19 +71,10 @@
  
   6. Perform other non circuit connections such as the pump and tube hose connections
   7. Install the Arduino IDE software if necessary from the [Arduino website](https://www.arduino.cc/en/software/).
-  8. Setup the Arduino IDE to communicate with the ESP32 board with [this article](https://circuitdigest.com/microcontroller-projects/programming-esp32-with-arduino-ide)
+  8. Setup the Arduino IDE to communicate with the ESP32 board with [this article](https://circuitdigest.com/microcontroller-projects/programming-esp32-with-arduino-ide) if necessary
   8. Connect the ESP32 board to your computer using and micro USB to USB cable
-  9. Open the Arduino IDE and select the correct board and port from the Tools menu.
-  10. The 
-     
-
-
-RELAY
-  5. Upload the code to the Arduino board by clicking the "Upload" button in the Arduino IDE.
-
-
-  1. Install the Arduino IDE software from the [Arduino website](https://www.arduino.cc/en/software/).
-  
+  9. Open the `IoT Water Monitoring and Conservation` sketch in its folder in Arduino IDE and select the correct board and port from the Tools menu.
+  10. Upload the sketch
 
 
 ## Additional Information
@@ -92,8 +84,8 @@ RELAY
   * The data log files are named "/DATA/QUALITY.CSV" and "/DATA/USAGE.CSV" for the turbidity and consumption data, respectively.
   * The downloaded data is in CSV format which can be analyzed in a spreadsheet application like Microsoft Excel.
   * The code is currently set up to use the DOIT ESP32 DevKit V1 board, but it should work with other compatible boards as well. Some minor modifications may be necessary for different hardware configurations.
-  
-  
+
+
 ## Future Plans
   * Add support for additional sensors, such as a pH sensor or temperature sensor
   * Implement automatic notifications or alerts when certain thresholds are reached or when certain conditions are detected
