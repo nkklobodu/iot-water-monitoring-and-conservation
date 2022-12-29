@@ -76,7 +76,7 @@
   7. Install the Arduino IDE software if necessary from the [Arduino website](https://www.arduino.cc/en/software/).
   8. Setup the Arduino IDE to communicate with the ESP32 board with [this article](https://circuitdigest.com/microcontroller-projects/programming-esp32-with-arduino-ide) if necessary.
   8. Connect the ESP32 board to your computer using and micro USB to USB cable.
-  9. Open the `IoT Water Monitoring and Conservation` sketch in its folder in Arduino IDE and select the correct board and port from the Tools menu.
+  9. Open the **IoT Water Monitoring and Conservation** sketch in its folder in Arduino IDE and select the correct board and port from the Tools menu.
   10. Upload the sketch.
 
 
