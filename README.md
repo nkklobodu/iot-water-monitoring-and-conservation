@@ -87,9 +87,9 @@ RELAY
   * The code is currently set up to use the DOIT ESP32 DevKit V1 board, but it should work with other compatible boards as well. Some minor modifications may be necessary for different hardware configurations.
   
 ## Future Plans and Road Map
-  - [ ] Add support for additional sensors
-  - [ ] Implement automatic notifications
-  - [ ] Integrate the system with a cloud platform
-  - [ ] Optimize the code
-  - [ ] Add a user interface
+- [ ] Add support for additional sensors
+- [ ] Implement automatic notifications
+- [ ] Integrate the system with a cloud platform
+- [ ] Optimize the code
+- [ ] Add a user interface
 
