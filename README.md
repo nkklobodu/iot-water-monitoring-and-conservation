@@ -1,4 +1,4 @@
-# ESP32 Water Monitoring and Conservation System
+# IoT Water Monitoring and Conservation System
   This Arduino code is designed to monitor the water level, consumption, and turbidity of a tank or reservoir. It uses a variety of sensors and hardware components to collect this data and store it in a local SD card for later analysis.
   The program runs on an ESP32 microcontroller with WiFi capabilities.
   
@@ -67,6 +67,13 @@
      The barebones relay with a transistor and a diode can also be created using this diagram:
      
      <img src="images/relay.png" alt = "relay" width="426" height="198">
+ 
+  6. Perform other non circuit connections such as the pump and tube hose connections
+  7. Install the Arduino IDE software if necessary from the [Arduino website](https://www.arduino.cc/en/software/).
+  8. Setup the Arduino IDE to communicate with the ESP32 board with [this article](https://circuitdigest.com/microcontroller-projects/programming-esp32-with-arduino-ide)
+  8. Connect the ESP32 board to your computer using and micro USB to USB cable
+  9. Open the Arduino IDE and select the correct board and port from the Tools menu.
+  10. The 
      
 
 
