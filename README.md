@@ -37,6 +37,9 @@
 
   The data is logged to the SD card at a specified interval, and the log files can be accessed through the web interface provided by the code. The web interface also allows for downloading the data files.
 
+## Schematics and Circuit Board
+<img src="images/schematic.png" alt = "schematic">
+<img src="images/circuit_board.png" alt = "circuit board" width="426" height="198">
 
 ## Setup
   1. Connect the HC-SR04 ultrasonic sensor to the ESP32 board using the following pin mapping:
@@ -69,12 +72,12 @@
      
      <img src="images/relay.png" alt = "relay" width="426" height="198">
  
-  6. Perform other non circuit connections such as the pump and tube hose connections
+  6. Perform other non circuit connections such as the pump and tube hose connections.
   7. Install the Arduino IDE software if necessary from the [Arduino website](https://www.arduino.cc/en/software/).
-  8. Setup the Arduino IDE to communicate with the ESP32 board with [this article](https://circuitdigest.com/microcontroller-projects/programming-esp32-with-arduino-ide) if necessary
-  8. Connect the ESP32 board to your computer using and micro USB to USB cable
+  8. Setup the Arduino IDE to communicate with the ESP32 board with [this article](https://circuitdigest.com/microcontroller-projects/programming-esp32-with-arduino-ide) if necessary.
+  8. Connect the ESP32 board to your computer using and micro USB to USB cable.
   9. Open the `IoT Water Monitoring and Conservation` sketch in its folder in Arduino IDE and select the correct board and port from the Tools menu.
-  10. Upload the sketch
+  10. Upload the sketch.
 
 
 ## Additional Information
