@@ -86,7 +86,16 @@ RELAY
   * The downloaded data is in CSV format which can be analyzed in a spreadsheet application like Microsoft Excel.
   * The code is currently set up to use the DOIT ESP32 DevKit V1 board, but it should work with other compatible boards as well. Some minor modifications may be necessary for different hardware configurations.
   
-## Future Plans and Road Map
+  
+## Future Plans
+  * Add support for additional sensors, such as a pH sensor or temperature sensor
+  * Implement automatic notifications or alerts when certain thresholds are reached or when certain conditions are detected
+  * Integrate the system with a cloud platform or remote server for remote access and data visualization
+  * Optimize the code for better performance and reliability
+  * Add a user interface or web interface for configuring and controlling the system
+
+
+## Road Map
 - [ ] Add support for additional sensors
 - [ ] Implement automatic notifications
 - [ ] Integrate the system with a cloud platform
