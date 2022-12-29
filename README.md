@@ -38,7 +38,7 @@
   The data is logged to the SD card at a specified interval, and the log files can be accessed through the web interface provided by the code. The web interface also allows for downloading the data files.
 
 ## Schematics and Circuit Board
-<img src="images/schematic.png" alt = "schematic">
+<img src="images/schematic.png" alt = "schematic" width="800">
 <img src="images/circuit_board.png" alt = "circuit board" width="426" height="198">
 
 ## Setup
