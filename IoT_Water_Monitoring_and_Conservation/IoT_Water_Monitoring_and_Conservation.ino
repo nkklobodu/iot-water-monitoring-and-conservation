@@ -10,6 +10,10 @@
 // declare an instance of the ESP32WebServer class and listens at port 80
   ESP32WebServer server(80);
 
+// WiFi network settings
+  const char* ssid = "Water";
+  const char* pass = "12345678";
+
 // declare an instance of the RTC_DS3231 class
   RTC_DS3231 rtc;
 
@@ -97,7 +101,7 @@ void setup() {
     attachInterrupt(digitalPinToInterrupt(flowPin), pulse, RISING);
 
   // create soft access point
-    WiFi.softAP("Water", "12345678");
+    WiFi.softAP(ssid, pass);
 
   // start mDNS responder
     if (!MDNS.begin(servername)) {
