@@ -92,7 +92,12 @@
 
 
 ## Additional Information
-  * The code creates a WiFi access point called "Water" with password "12345678". Connect to this access point to access the web server and download the data stored on the SD card. This can be changed by replacing your SSID and PASSWORD in `WiFi.softAP("SSID", "PASSWORD");` in the `void setup ()` function.
+  * The code creates a WiFi access point called "Water" with password "12345678". Connect to this access point to access the web server and download the data stored on the SD card. This can be changed by replacing `Water` and `12345678` in the code with your preferred SSID and password respectively:
+    ```c++
+    // WiFi network settings
+      const char* ssid = "Water";
+      const char* pass = "12345678";
+    ```
   * The code uses the `ESP32WebServer` library to create a simple web server for displaying the contents of the SD card. Use a web browser to navigate to [http://mcserver.local](http://mcserver.local/) to access the web interface.
   * The code logs data to the SD card at a predetermined interval of 10 seconds. The data is stored in two separate files, one for turbidity data and one for flow data.
   * The data log files are named "/DATA/QUALITY.CSV" and "/DATA/USAGE.CSV" for the turbidity and consumption data, respectively.
