@@ -43,11 +43,13 @@
 
 
 ## Files and Directories
-  The **IoT_Water_Monitoring_and_Conservation** directory contains these files:
-    * **HTML.h**: a header file containing HTML code for the web server
-    * **IoT_Water_Monitoring_and_Conservation.ino**: the main code which calls the necessary functions
-    * **other_functions.ino**: contains functions which perform physical actions
-    * **web_page_functions.ino**: contains functions which perform webpage actions
+  The **IoT_Water_Monitoring_and_Conservation** directory contains:
+  * **HTML.h**: a header file containing HTML code for the web server
+  * **IoT_Water_Monitoring_and_Conservation.ino**: the main code which calls the necessary functions
+  * **other_functions.ino**: contains functions which perform physical actions
+  * **web_page_functions.ino**: contains functions which perform webpage actions
+
+  The **images** directory contains images linked in the **README.md**
 
 
 ## Setup
