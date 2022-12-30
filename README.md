@@ -23,7 +23,7 @@
 ## Code Structure
   The code includes several libraries for interacting with the sensors and hardware components, including `WiFi.h`, `ESP32WebServer.h`, `ESPmDNS.h`, `Wire.h`, `SPI.h`, and `SD.h`. It also uses the RTClib library, `RTClib.h` for handling real-time clock functionality.
 
-  The code defines several functions for handling different tasks, including `pulse()` for measuring the flow rate, `fill()` for controlling the pump and maintaining the water level, `logData()` for logging data to the SD card, and `sdDir()` for displaying the data log files on the SD card to a webpage from a local web server.
+  The code defines several functions for handling different tasks, including `pulse()` for measuring the flow rate, `fill()` for controlling the pump and maintaining the water level, `logData()` for logging data to the SD card, and `sdDir()` for displaying the data log files on the SD card to a webpage from an mDNS server.
 
   There are also several global variables defined for storing data and configuring the code's behavior, such as `pulse_freq`, `flow`, and `turbidity`.
 
