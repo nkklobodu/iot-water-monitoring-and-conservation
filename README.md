@@ -41,6 +41,15 @@
 <img src="images/schematic.png" alt = "schematic" width="800">
 <img src="images/circuit_board.png" alt = "circuit board" width="426" height="198">
 
+
+## Files and Directories
+  The **IoT_Water_Monitoring_and_Conservation** directory contains these files:
+    * **HTML.h**: a header file containing HTML code for the web server
+    * **IoT_Water_Monitoring_and_Conservation.ino**: the main code which calls the necessary functions
+    * **other_functions.ino**: contains functions which perform physical actions
+    * **web_page_functions.ino**: contains functions which perform webpage actions
+
+
 ## Setup
   1. Connect the HC-SR04 ultrasonic sensor to the ESP32 board using the following pin mapping:
      * VCC to +5V
@@ -103,4 +112,8 @@
 - [ ] Integrate the system with a cloud platform
 - [ ] Optimize the code
 - [ ] Add a user interface
+
+
+## Contributions
+  We welcome contributions to this project. If you have an idea for a new feature or have found a bug, please open an issue in the repository.
 
