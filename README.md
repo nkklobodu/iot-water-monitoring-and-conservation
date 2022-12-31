@@ -15,7 +15,7 @@
   * YF-S201C flow sensor for measuring flow rate
   * Turbidity sensor module for measuring water turbidity
   * SD card module and SD card for storing data
-  * RTC module for timestamping recorded data
+  * DS3231 RTC module for timestamping recorded data
   * DC water pump for pumping water
   * Relay module for switching the water pump
 
@@ -53,42 +53,48 @@
 
 
 ## Setup
-  1. Connect the HC-SR04 ultrasonic sensor to the ESP32 board using the following pin mapping:
-     * VCC to +5V
-     * GND to GND
-     * TRIG to GPIO 25
-     * ECHO to GPIO 26
-  2. Connect the YF-S201 flow sensor to the ESP32 board using the following pin mapping:
-     * VCC to +5V
-     * GND to GND
-     * OUT to GPIO 32
-  3. Connect the turbidity sensor to the ESP32 board using the following pin mapping:
-     * VCC to +3.3V
-     * GND to GND
-     * SDA to GPIO 21
-     * SCL to GPIO 22
-  4. Connect the SD card module to the ESP32 board using the following pin mapping:
-     * VCC to +3.3V
-     * GND to GND
-     * MOSI to GPIO 23
-     * MISO to GPIO 19
-     * SCK to GPIO 18
-     * CS to GPIO 5
-  5. Connect the relay module to the ESP32 board using the following pin mapping:
-     * VCC to +5V
-     * GND to GND
-     * S or In to GPIO 33
+  1. Connect the hardware as follows:
+     | Hardware                       | Connect from | Connect to |
+     | --------------                 | ------------ | ---------- |
+     | **HC-SR04 Ultrasonic**         | VCC          | 5V         |
+     |                                | GND          | GND        |
+     |                                | TRIG         | GPIO25     |
+     |                                | ECHO         | GPIO26     |
+     |||
+     | **YF-S201C Flow sensor**       | VCC          | 5V         |
+     |                                | GND          | GND        |
+     |                                | OUT          | GPIO32     |
+     |||
+     | **Turbidity sensor**           | VCC          | 3V3        |
+     |                                | GND          | GND        |
+     |                                | OUT          | GPIO35     |
+     |||
+     | **SD card module**             | VCC          | 3V3        |
+     |                                | GND          | GND        |
+     |                                | MOSI         | GPIO23     |
+     |                                | MISO         | GPIO19     |
+     |                                | SCK          | GPIO18     |
+     |                                | CS           | GPIO5      |
+     |||
+     | **DS3231 RTC module**          | VCC          | 3V3        |
+     |                                | GND          | GND        |
+     |                                | SDA          | GPIO21     |
+     |                                | SCL          | GPIO22     |
+     |                                | SQW          | X          |
+     |                                | 32K          | X          |
+     |||
+     | **Relay module**               | VCC          | 5V         |
+     |                                | GND          | GND        |
+     |                                | S            | GPIO33     |
 
-     The barebones relay with a transistor and a diode can also be created using this diagram:
-     
-     <img src="images/relay.png" alt = "relay" width="426" height="198">
+  The barebones relay with a transistor and a diode can also be created using [this diagram](images/relay.png)
  
-  6. Perform other non circuit connections such as the pump and tube hose connections.
-  7. Install the Arduino IDE software if necessary from the [Arduino website](https://www.arduino.cc/en/software/).
-  8. Setup the Arduino IDE to communicate with the ESP32 board with [this article](https://circuitdigest.com/microcontroller-projects/programming-esp32-with-arduino-ide) if necessary.
-  8. Connect the ESP32 board to your computer using and micro USB to USB cable.
-  9. Open the **IoT Water Monitoring and Conservation** sketch in its folder in Arduino IDE and select the correct board and port from the Tools menu.
-  10. Upload the sketch.
+  2. Perform other non circuit connections such as the pump and tube hose connections.
+  3. Install the Arduino IDE software if necessary from the [Arduino website](https://www.arduino.cc/en/software/).
+  4. Setup the Arduino IDE to communicate with the ESP32 board with [this article](https://circuitdigest.com/microcontroller-projects/programming-esp32-with-arduino-ide) if necessary.
+  5. Connect the ESP32 board to your computer using and micro USB to USB cable.
+  6. Open the **IoT Water Monitoring and Conservation** sketch in its folder in Arduino IDE and select the correct board and port from the Tools menu.
+  7. Upload the sketch.
 
 
 ## Additional Information
