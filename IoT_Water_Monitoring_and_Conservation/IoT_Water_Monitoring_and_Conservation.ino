@@ -20,8 +20,10 @@
 // include web file
   #include "HTML.h"
 
-// define constants for the server name and pin numbers
-  #define servername "MCserver"
+//define server name
+  #define servername "datalog"
+
+// define pin numbers constants
   #define CS 5
   #define flowPin 32
   #define turbidityPin 35
