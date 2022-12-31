@@ -1,6 +1,5 @@
 # IoT Water Monitoring and Conservation
-  This Arduino code monitors the water level, consumption, and turbidity of a tank or reservoir. It uses a variety of sensors and hardware components to collect this data and store it in a local SD card for later analysis.
-  The program runs on an ESP32 microcontroller with WiFi capabilities.
+  This Arduino project code aims to efficiently monitor and help conserve water usage in real-time. The code runs on an ESP32 WiFi board and utilizes sensors, modules and devices to track the flow and turbidity of water supply, as well as maintaining the water level of a water tank or reservoir within a predetermined range. The data is logged to an SD card and the log files are made available on a webpage through a mDNS web server for later analysis.
 
 
 ## Features
@@ -23,7 +22,7 @@
 ## Code Structure
   The code includes several libraries for interacting with the sensors and hardware components, including `WiFi.h`, `ESP32WebServer.h`, `ESPmDNS.h`, `Wire.h`, `SPI.h`, and `SD.h`. It also uses the RTClib library, `RTClib.h` for handling real-time clock functionality.
 
-  The code defines several functions for handling different tasks, including `pulse()` for measuring the flow rate, `fill()` for controlling the pump and maintaining the water level, `logData()` for logging data to the SD card, and `sdDir()` for displaying the data log files on the SD card to a webpage from an mDNS server.
+  The code defines several functions for handling different tasks, including `pulse()` for measuring the flow rate, `fill()` for controlling the pump and maintaining the water level, `logData()` for logging data to the SD card, and `sdDir()` for displaying the data log files on the SD card to a webpage from an mDNS web server.
 
   There are also several global variables defined for storing data and configuring the code's behavior, such as `pulse_freq`, `flow`, and `turbidity`.
 
