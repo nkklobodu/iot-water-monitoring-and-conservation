@@ -60,29 +60,24 @@
      |                                | GND          | GND        |
      |                                | TRIG         | GPIO25     |
      |                                | ECHO         | GPIO26     |
-     |||
      | **YF-S201C Flow sensor**       | VCC          | 5V         |
      |                                | GND          | GND        |
      |                                | OUT          | GPIO32     |
-     |||
      | **Turbidity sensor**           | VCC          | 3V3        |
      |                                | GND          | GND        |
      |                                | OUT          | GPIO35     |
-     |||
      | **SD card module**             | VCC          | 3V3        |
      |                                | GND          | GND        |
      |                                | MOSI         | GPIO23     |
      |                                | MISO         | GPIO19     |
      |                                | SCK          | GPIO18     |
      |                                | CS           | GPIO5      |
-     |||
      | **DS3231 RTC module**          | VCC          | 3V3        |
      |                                | GND          | GND        |
      |                                | SDA          | GPIO21     |
      |                                | SCL          | GPIO22     |
      |                                | SQW          | X          |
      |                                | 32K          | X          |
-     |||
      | **Relay module**               | VCC          | 5V         |
      |                                | GND          | GND        |
      |                                | S            | GPIO33     |
