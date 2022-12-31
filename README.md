@@ -104,7 +104,11 @@
       const char* ssid = "Water";
       const char* pass = "12345678";
     ```
-  * The code uses the `ESP32WebServer` library to create a simple web server for displaying the contents of the SD card. Use a web browser to navigate to [http://mcserver.local](http://mcserver.local/) to access the web interface.
+  * The code uses the `ESP32WebServer` library to create a simple web server for displaying the contents of the SD card. Use a web browser to navigate to [http://datalog.local/](http://datalog.local/) to access the web interface. The server name can be changed by replacing `datalog` with your preferred server name:
+    ```c++
+    //define server name
+      #define servername "datalog"
+    ```
   * The code logs data to the SD card at a predetermined interval of 10 seconds. The data is stored in two separate files, one for turbidity data and one for flow data.
   * The data log files are named "/DATA/QUALITY.CSV" and "/DATA/USAGE.CSV" for the turbidity and consumption data, respectively.
   * The downloaded data is in CSV format which can be analyzed in a spreadsheet application like Microsoft Excel.
