@@ -112,7 +112,7 @@
 ## Future Plans
   * Add support for additional sensors, such as a pH sensor or temperature sensor for more comprehensive analysis of water data.
   * Implement automatic notifications or alerts via email or sms when the water level falls below a certain threshold or when the flow or usage exceeds a certain limit.
-  * Add a user interface or web interface to allow users to:
+  * Add a user app or web interface to allow users to:
     - configure and control the system by setting custom thresholds, data logging frequency, and schedule automatic tank filling.
     - visualize the current data with charts and graphs without the need to download it.
   * Integrate the system with a cloud platform to enable configuring the system and monitoring water usage and quality from anywhere in the world.
@@ -122,7 +122,7 @@
 ## Road Map
 - [ ] Add support for additional sensors
 - [ ] Implement automatic notifications or alerts
-- [ ] Add a user interface
+- [ ] Add a user app or web interface
 - [ ] Integrate the system with a cloud platform
 - [ ] Optimize the code
 
