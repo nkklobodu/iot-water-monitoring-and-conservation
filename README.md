@@ -1,5 +1,7 @@
 # IoT Water Monitoring and Conservation
   This Arduino project code aims to efficiently monitor and help conserve water usage in real-time. The code runs on an ESP32 WiFi board and utilizes sensors, modules and devices to track the flow and turbidity of water supply, as well as maintaining the water level of a water tank or reservoir within a predetermined range. The data is logged to an SD card and the log files are made available on a webpage through a mDNS web server for later analysis.
+  
+  The project is a useful and practical tool for anyone who wants to monitor and manage their water usage more effectively. By implementing this system, individuals and organizations can positively impact the environment. Whether you are a homeowner, farmer, business owner, or environmentalist, this project can help save water, reduce waste, save utility bills, and assist decision-making.
 
 
 ## Features
