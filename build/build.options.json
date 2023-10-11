@@ -1,0 +1,11 @@
+{
+  "additionalFiles": "..\\..",
+  "builtInToolsFolders": "",
+  "compiler.optimization_flags": "",
+  "customBuildProperties": "",
+  "fqbn": "arduino:avr:uno",
+  "hardwareFolders": "C:\\Users\\nkklo\\AppData\\Local\\Arduino15\\packages",
+  "otherLibrariesFolders": "C:\\Users\\nkklo\\Documents\\Arduino\\libraries",
+  "runtime.ide.version": "10607",
+  "sketchLocation": "C:\\Users\\nkklo\\Documents\\GitHub\\iot-water-monitoring-and-conservation\\IoT_Water_Monitoring_and_Conservation"
+}

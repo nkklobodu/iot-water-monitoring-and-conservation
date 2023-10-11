@@ -1,0 +1,6 @@
+{
+    "board": "esp32:esp32:esp32doit-devkit-v1",
+    "sketch": "IoT_Water_Monitoring_and_Conservation\\IoT_Water_Monitoring_and_Conservation.ino",
+    "output": "..\\build"
+    
+}
