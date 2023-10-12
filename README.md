@@ -38,6 +38,8 @@
 ## Watch the Project Video
 [![Watch the video](https://img.youtube.com/vi/HQruk8vdTt4/0.jpg)](https://www.youtube.com/watch?v=HQruk8vdTt4)
 
+https://www.youtube.com/watch?v=HQruk8vdTt4
+
 ## Repository Contents
   <!--
   * **src/** - Source code of the project
