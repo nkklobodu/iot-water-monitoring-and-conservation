@@ -17,6 +17,3 @@
 // custom configuration
 #define MINWATERLEVEL 8  // more distance means less water in the tank
 #define MAXWATERLEVEL 2  // DO NOT go less than 2cm; that's the minimum range of the ultrasonic sensor
-                         // trying to measure less than 2cm will result in random values
-                         // the ultrasonic sensor might think the tank is empty and activate pump
-                         // water will overflow, enter the sensor and damage it
