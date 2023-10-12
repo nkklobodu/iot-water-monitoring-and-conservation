@@ -42,8 +42,8 @@
   The data is logged to the SD card at a specified interval, and the log files can be accessed through the web interface provided by the code. The web interface also allows for downloading the data files.
 
 ## Schematics and Circuit Board
-<img src="images/schematic.png" alt = "schematic" width="800">
-<img src="images/circuit_board.png" alt = "circuit board" width="426" height="198">
+<img src="/assets/images/schematic.png" alt = "schematic" width="800">
+<img src="/assets/images/circuit_board.png" alt = "circuit board" width="426" height="198">
 
 
 ## Files and Directories
@@ -86,7 +86,7 @@
      |                                | GND                 | GND              |
      |                                | S                   | GPIO33           |
 
-  The barebones relay with a transistor and a diode can also be created using [this diagram](images/relay.png)
+  The barebones relay with a transistor and a diode can also be created using [this diagram](/assets/images/relay.png)
  
   2. Perform other non circuit connections such as the pump and tube hose connections.
   3. Install the Arduino IDE software if necessary from the [Arduino website](https://www.arduino.cc/en/software/).
